@@ -7,8 +7,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "preinstall": "npx pnpm@latest --version",
-    "install": "pnpm install"
   },
   "dependencies": {
     "@next/font": "13.0.7",
