@@ -1,11 +1,4 @@
 import SectionWrapper from "../../SectionWrapper"
-import Image from "next/image"
-import wordpress from "../../../public/icons/wordpress.svg"
-import nextjs from "../../../public/icons/nextjs.svg"
-import tailwind from "../../../public/icons/tailwind.svg"
-import nodejs from "../../../public/icons/nodejs.svg"
-import vercel from "../../../public/icons/vercel.svg"
-import figma from "../../../public/icons/figma.svg"
 
 const ToolKit = () => {
 

@@ -18,10 +18,10 @@ export default function GetStarted() {
     const [isMail, setIsMail] = useState(false)
     const [isLoading, setIsloading] = useState(false)
     const servicesItems = [
-        "Wedding",
-        "Baptism",
+        "Γάμος",
+        "Βάφτιση",
         "Party",
-        "Event",
+        "Εκδήλωση",
     ];
 
     const handleSubmit = async (e) => {
@@ -67,7 +67,7 @@ export default function GetStarted() {
     return (
         <>
             <Head>
-                <title>Contact us - Blinder</title>
+                <title>Επικοινωνήστε μαζί μας - PartyBoothSKG</title>
             </Head>
             {isLoading ? <Loading loading={isLoading} /> : null}
             <div className='pt-28 pb-12'>
@@ -75,7 +75,7 @@ export default function GetStarted() {
                     <div className='max-w-lg mx-auto gap-12 justify-between lg:flex lg:max-w-none'>
                         <div className='max-w-lg sm:text-center lg:text-left'>
                             <h1 className='text-gray-800 text-3xl font-semibold sm:text-4xl'>
-                                Επικοινωνήστε με κάποιον από την ομάδα μας
+                                Επικοινωνήστε άμεσα, με έναν εκπρόσωπό μας
                             </h1>
                             <p className='mt-3'>
                                 Θα χαρούμε να λύσουμε οποιαδήποτε απορία έχετε σχετικά με την ενοικίαση του εξοπλισμού μας. Παρακαλώ επικοινωνήστε μαζί μας στο{" "}
@@ -94,7 +94,7 @@ export default function GetStarted() {
                                     onSubmit={(e) => handleSubmit(e)}
                                     className='space-y-5 font-medium'>
                                     <div>
-                                        <label>Full name</label>
+                                        <label>Ονοματεπώνυμο</label>
                                         <Input
                                             aria-label='Full name'
                                             type='text'
@@ -105,7 +105,7 @@ export default function GetStarted() {
                                         />
                                     </div>
                                     <div>
-                                        <label>Contact Number</label>
+                                        <label>Τηλέφωνο Επικοινωνίας</label>
                                         <Input
                                             value={formData.contactNumber}
                                             onChange={(e) => handleInputChange(e, 'contactNumber')}
@@ -127,7 +127,7 @@ export default function GetStarted() {
                                         />
                                     </div>
                                     <div>
-                                        <label>Location</label>
+                                        <label>Τοποθεσία εκδήλωσης</label>
                                         <Input
                                             value={formData.location}
                                             onChange={(e) => handleInputChange(e, 'location')}
@@ -138,7 +138,7 @@ export default function GetStarted() {
                                         />
                                     </div>
                                     <div>
-                                        <label>Select a date</label>
+                                        <label>Ημερομηνία εκδήλωσης</label>
                                         <Input
                                             value={formData.date}
                                             onChange={(e) => handleInputChange(e, 'date')}
@@ -149,7 +149,7 @@ export default function GetStarted() {
                                         />
                                     </div>
                                     <div>
-                                        <label>Message</label>
+                                        <label>Μήνυμα</label>
                                         <textarea
                                             value={formData.message}
                                             onChange={(e) => handleInputChange(e, 'message')}
@@ -158,7 +158,7 @@ export default function GetStarted() {
                                             className='w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg'></textarea>
                                     </div>
                                     <div>
-                                        <label>Service</label>
+                                        <label>Υπηρεσία</label>
                                         <ul className='mt-3 flex flex-wrap gap-x-8 gap-y-3 font-normal max-w-md sm:gap-x-16'>
                                             {servicesItems.map((item, idx) => (
                                                 <li key={idx} className='flex gap-x-2 items-center'>
@@ -175,7 +175,7 @@ export default function GetStarted() {
                                     <div className='pt-1'>
                                         <Button
                                             className='w-full text-white bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-600 ring-offset-2 ring-indigo-600 focus:ring'>
-                                            Submit
+                                            Υποβολή
                                         </Button>
                                     </div>
                                 </form> :

@@ -18,8 +18,8 @@ export default async function handler(req, res) {
 
         // Send mail with defined transport object
         let info = await transporter.sendMail({
-            from: `"Contact Form" <${process.env.EMAIL_ADDRESS}>`, // sender address
-            to: process.env.EMAIL_ADDRESS,
+            from: `"Contact Form" <${process.env.EMAIL_USER}>`, // sender address
+            to: process.env.EMAIL_USER,
             subject: "New Contact Form Submission",
             text: `You have a new submission from: 
              Name: ${fullName}

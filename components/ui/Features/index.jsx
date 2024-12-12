@@ -12,8 +12,8 @@ const Features = () => {
                           d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0z"/>
                 </svg>
             ,
-            title: "Capture the Moment",
-            desc: "Turn every moment into a memory with our state-of-the-art photobooths. Whether it’s a wedding, corporate event, or birthday party, our booths are designed to capture the joy, laughter, and creativity of your guests. With customizable backdrops, fun props, and instant printing, your event will be unforgettable!"
+            title: "Κάντε την στιγμή σας, μια ξεχωριστή ανάμνηση",
+            desc: "Μετατρέψτε κάθε στιγμή σε ανάμνηση με το Magic Mirror Photo Booth. Είτε πρόκειται για γάμο, εταιρική εκδήλωση ή πάρτι γενεθλίων, το Magic Mirror Photo Booth είναι σχεδιασμένα να αποτυπώνουν τη χαρά, το γέλιο και τη δημιουργικότητα των καλεσμένων σας. Με προσαρμόσιμα φόντα, διασκεδαστικά αξεσουάρ και άμεση εκτύπωση, η εκδήλωσή σας θα μείνει αξέχαστη!"
         },
         {
             icon:
@@ -23,8 +23,8 @@ const Features = () => {
                           d="M15.75 8.25v-1.5A2.25 2.25 0 0013.5 4.5h-3a2.25 2.25 0 00-2.25 2.25v1.5m-3 0a2.25 2.25 0 012.25-2.25h12a2.25 2.25 0 012.25 2.25v9a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 17.25v-9z"/>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75l3 3 3-3"/>
                 </svg>,
-            title: "Share the Fun",
-            desc: "Sharing is caring! Our photobooths come equipped with digital sharing options, making it easier than ever for your guests to post their favorite snaps on social media or send them via email. With high-resolution photos and GIFs, your event will be trending in no time!"
+            title: "Μαγεία Παντού",
+            desc: "Tο Magic Mirror Photo Booth διαθέτει επιλογές ψηφιακού διαμοιρασμού, κάνοντας ευκολότερη από ποτέ τη δημοσίευση αγαπημένων φωτογραφιών στα μέσα κοινωνικής δικτύωσης ή την αποστολή τους μέσω email. Με φωτογραφίες υψηλής ανάλυσης και GIFs, η εκδήλωσή σας θα γίνει viral σε χρόνο μηδέν!"
         },
         {
             icon:
@@ -33,10 +33,11 @@ const Features = () => {
                     <path strokeLinecap="round" strokeLinejoin="round"
                           d="M4.5 9.75l7.5-6 7.5 6M4.5 19.5h15m-15 0a2.25 2.25 0 01-2.25-2.25v-9A2.25 2.25 0 014.5 6.75m15 12.75a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25m-15 0h15"/>
                 </svg>,
-            title: "Hassle-Free Setup",
-            desc: "Let us handle the setup while you focus on enjoying your event. Our team provides professional delivery, installation, and on-site assistance to ensure everything runs smoothly. From start to finish, we’ve got you covered—because making memories should be stress-free"
+            title: "Εύκολη Εγκατάσταση",
+            desc: "Αφήστε σε εμάς την εγκατάσταση και εσείς επικεντρωθείτε στο να απολαύσετε την εκδήλωσή σας. Η ομάδα μας παρέχει επαγγελματική παράδοση, εγκατάσταση και υποστήριξη στον χώρο για να διασφαλίσει ότι όλα λειτουργούν ομαλά. Από την αρχή μέχρι το τέλος, είμαστε δίπλα σας—γιατί η δημιουργία αναμνήσεων πρέπει να είναι χωρίς άγχος."
         }
-    ]
+    ];
+
 
     return (
         <SectionWrapper>

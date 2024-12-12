@@ -13,21 +13,7 @@ const Hero = () => (
                     <p className="md:text-2xl text-1xl max-w-2xl mx-auto text-white">
                         Capture your favorite moments with our amazing photobooth equipment
                     </p>
-                    {/*    <div className="flex items-center justify-center gap-x-3 font-medium text-sm">
-                    <NavLink
-                        href="/get-started"
-                        className="text-white bg-gray-800 hover:bg-gray-600 active:bg-gray-900 "
-                    >
-                        Start building
-                    </NavLink>
-                    <NavLink
-                        href="#cta"
-                        className="text-gray-700 border hover:bg-gray-50"
-                        scroll={false}
-                    >
-                        Learn more
-                    </NavLink>
-                </div>*/}
+
                 </div>
             </div>
         </div>
