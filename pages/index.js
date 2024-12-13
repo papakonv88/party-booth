@@ -18,7 +18,6 @@ export default function Home() {
             </Head>
             <Hero/>
             <Testimonials/>
-            {/* <LogoGrid />*/}
             <GradientWrapper className="wrapper">
                 <Features/>
                 <CTA reverse={false} image={image1} title={'Μirror Photo Booth'} description={'Το Magic Mirror Photo Booth είναι η ιδανική επιλογή για κάθε εκδήλωση, προσφέροντας έναν εντυπωσιακό καθρέφτη με οθόνη αφής 65 ιντσών, που χαρίζει μια διαδραστική και ξεχωριστή εμπειρία. Με απεριόριστες φωτογραφίες υψηλής ανάλυσης, διασκεδαστικά props, δυνατότητα άμεσης εκτύπωσης και ψηφιακής αποστολής, οι καλεσμένοι σας θα απολαύσουν μοναδικές στιγμές που θα μείνουν αξέχαστες. Ιδανικό για γάμους, βαπτίσεις, εταιρικά events και γενέθλια, το Magic Mirror Photo Booth προσθέτει λάμψη και διασκέδαση σε κάθε περίσταση!'}/>
