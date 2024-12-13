@@ -4,7 +4,6 @@ import CTA from "../components/ui/CTA";
 import Features from "../components/ui/Features";
 import FooterCTA from "../components/ui/FooterCTA";
 import Hero from "../components/ui/Hero";
-import LogoGrid from "../components/ui/LogoGrid";
 import Testimonials from "../components/ui/Testimonials";
 import ToolKit from "../components/ui/ToolKit";
 import image1 from "../public/image-1.jpg";

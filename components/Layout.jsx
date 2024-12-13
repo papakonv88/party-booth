@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
     return (
         <>
             <Head>
-                <title>PartyBooth</title>
+                <title>PartyBooth | SKG</title>
                 <meta name='description' content='PartyBooth - Capture your favorite moments with our amazing photobooth equipment' />
                 <meta name='viewport' content='width=device-width, initial-scale=1' />
                 <link rel='icon' href='/favicon.ico' />
