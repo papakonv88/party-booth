@@ -1,7 +1,7 @@
 const Hero = () => (
     <section>
         <div class="relative">
-            <video autoplay muted playsinline loop id="background-video" className="w-full md:h-auto h-[100%] max-h-full max-w-full object-cover">
+            <video autoPlay muted playsInline loop id="background-video" className="w-full md:h-auto h-[100%] max-h-full max-w-full object-cover">
                 <source src="hero_video.mp4" type="video/mp4"/>
                 Your browser does not support the video tag.
             </video>
