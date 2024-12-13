@@ -181,10 +181,10 @@ export default function GetStarted() {
                                 </form> :
                                 <div className='class="max-w-lg sm:text-center lg:text-center"'>
                                     <h1 className='text-green-800 text-3xl font-semibold sm:text-4xl'>
-                                       Thank you! Your message has been sent successfully!
+                                       Ευχαριστούμε! Το μήνυμα σας, στάλθηκε επιτυχώς!
                                     </h1>
                                     <p className='mt-5'>
-                                        Someone from our team will be in touch with you very soon :)
+                                        Κάποιος από την ομάδα μας, θα επικοινωνήσει μαζί σας πολύ σύντομα :)
                                     </p>
                                 </div>
                             }
