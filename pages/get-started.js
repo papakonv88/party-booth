@@ -68,8 +68,42 @@ export default function GetStarted() {
         <>
             <Head>
                 <title>Επικοινωνήστε μαζί μας - PartyBoothSKG</title>
+                <meta name="description" content="Contact Us, book your photbooth rental"/>
+                <meta name="robots" content="index, follow"/>
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "http://schema.org",
+                        "@type": "ProfessionalService",
+                        "name": "Party Booth | SKG",
+                        "url": "https://www.party-booth.gr/get-started",
+                        "telephone": "+306989386480",
+                        "contactPoint": {
+                            "@type": "ContactPoint",
+                            "telephone": "+306989386480",
+                            "contactType": "Customer Service",
+                            "areaServed": "GR",
+                            "availableLanguage": ["Greek", "English"]
+                        },
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Not Specified",
+                            "addressLocality": "Thessaloniki",
+                            "addressRegion": "GR",
+                            "postalCode": "Not Specified",
+                            "addressCountry": "GR"
+                        },
+                        "geo": {
+                            "@type": "GeoCoordinates",
+                            "latitude": 40.6401,
+                            "longitude": 22.9444
+                        },
+                        "sameAs": [
+                            "https://www.instagram.com/partybooth_skg",
+                        ]
+                    })}
+                </script>
             </Head>
-            {isLoading ? <Loading loading={isLoading} /> : null}
+            {isLoading ? <Loading loading={isLoading}/> : null}
             <div className='pt-28 pb-12'>
                 <div className='custom-screen text-gray-600'>
                     <div className='max-w-lg mx-auto gap-12 justify-between lg:flex lg:max-w-none'>
@@ -78,7 +112,8 @@ export default function GetStarted() {
                                 Επικοινωνήστε άμεσα, με έναν εκπρόσωπό μας
                             </h1>
                             <p className='mt-3'>
-                                Θα χαρούμε να λύσουμε οποιαδήποτε απορία έχετε σχετικά με την ενοικίαση του εξοπλισμού μας. Παρακαλώ επικοινωνήστε μαζί μας στο{" "}
+                                Θα χαρούμε να λύσουμε οποιαδήποτε απορία έχετε σχετικά με την ενοικίαση του εξοπλισμού
+                                μας. Παρακαλώ επικοινωνήστε μαζί μας στο{" "}
                                 <a
                                     href='mailto:partyboothskg@hotmail.com'
                                     target='_blank'

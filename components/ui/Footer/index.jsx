@@ -1,6 +1,6 @@
 const socialInfo = [
     {
-        href: "https://www.instagram.com/partybooth_skg/?igsh=aG12dm9iNGdhYWUx",
+        href: "https://www.instagram.com/partybooth_skg",
         icon: (
             <svg
                 xmlns="http://www.w3.org/2000/svg"
