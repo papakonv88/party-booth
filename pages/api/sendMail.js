@@ -9,11 +9,14 @@ export default async function handler(req, res) {
         let transporter = nodemailer.createTransport({
             host: process.env.EMAIL_HOST,
             port: process.env.EMAIL_PORT,
-            secure: true, // TLS is used instead of SSL
+            secure: false, // TLS is used instead of SSL
             auth: {
                 user: process.env.EMAIL_USER,
                 pass: process.env.EMAIL_PASSWORD,
             },
+            tls: {
+                ciphers: 'SSLv3'
+            }
         });
 
         // Send mail with defined transport object
