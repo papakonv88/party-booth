@@ -11,6 +11,7 @@ const oAuth2Client = new google.auth.OAuth2(CLIENT_ID, CLIENT_SECRET, REDIRECT_U
 oAuth2Client.setCredentials({ refresh_token: REFRESH_TOKEN });
 
 export default async function handler(req, res) {
+    console.log(req, 'req')
     if (req.method === 'POST') {
         try {
             const accessToken = await oAuth2Client.getAccessToken();
