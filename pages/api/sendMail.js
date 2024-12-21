@@ -6,7 +6,7 @@ export default async (req, res) => {
     const {fullName, contactNumber, email, location, date, message, services} = req.body;
     // Send the email
     const {data, error} = await resend.emails.send({
-        from: 'Contact Form <no-reply@resend.dev>', // sender address
+        from: 'no-reply@resend.dev', // sender address
         to: process.env.EMAIL_USER,
         subject: "Photo Booth Email Request",
         text: `New Message: 
