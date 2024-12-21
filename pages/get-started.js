@@ -48,7 +48,6 @@ export default function GetStarted() {
             setIsloading(false)
             alert('Κάτι πήγε στραβά, δοκιμάστε ξανά σε λίγο.')
         }
-
     };
 
     const handleInputChange = (e, prop) => {
@@ -115,11 +114,11 @@ export default function GetStarted() {
                                 Θα χαρούμε να λύσουμε οποιαδήποτε απορία έχετε σχετικά με την ενοικίαση του εξοπλισμού
                                 μας. Παρακαλώ επικοινωνήστε μαζί μας στο{" "}
                                 <a
-                                    href='mailto:partyboothskg@hotmail.com'
+                                    href='mailto:partyboothskg2024@gmail.com'
                                     target='_blank'
                                     rel='noreferrer'
                                     className='text-indigo-600 hover:text-indigo-400 font-medium duration-150'>
-                                    partyboothskg@hotmail.com.
+                                    partyboothskg2024@gmail.com.
                                 </a>
                             </p>
                         </div>
