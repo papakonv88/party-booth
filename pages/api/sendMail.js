@@ -4,6 +4,7 @@ import { Resend } from 'resend';
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export default async function handler(req, res) {
+    res.setHeader('Access-Control-Allow-Origin', '*');
     if (req.method === 'POST') {
         const { fullName, contactNumber, email, location, date, message, services } = req.body;
 
