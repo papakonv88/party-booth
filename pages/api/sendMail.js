@@ -23,13 +23,13 @@ export default async function handler(req, res) {
                      Message: ${message}
                      Services: ${services.join(", ")}`,
             });
-
             res.status(200).json({ success: true, data });
         } catch (error) {
             console.error('Error sending email:', error);
             res.status(500).json({ success: false, error: error.message });
         }
     } else {
-        res.status(405).json({ success: false, message: 'Method Not Alloweddd' });
+        res.setHeader('Allow', ['POST']);
+        return res.status(405).end(`Method ${req.method} Not Allowed`);
     }
 }
