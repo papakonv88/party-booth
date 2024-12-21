@@ -27,6 +27,18 @@ export default function handler(req, res) {
                     },
                 });
 
+                // Verify the transporter
+                return new Promise((resolve, reject) => {
+                    transporter.verify((error, success) => {
+                        if (error) {
+                            reject(error); // Stop execution if verification fails
+                        } else {
+                            resolve(transporter); // Proceed to sending email if verification succeeds
+                        }
+                    });
+                });
+            })
+            .then((transporter) => {
                 const mailOptions = {
                     from: `"Contact Form" <${process.env.EMAIL_USER}>`, // sender address
                     to: process.env.EMAIL_USER,
