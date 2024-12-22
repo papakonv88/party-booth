@@ -4,7 +4,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export default async (req, res) => {
     const {fullName, contactNumber, email, location, date, message, services} = req.body;
     const {data, error} = await resend.emails.send({
-        from:  process.env.EMAIL_USER,
+        from:  'Photo Booth | SKG <you@party-booth.gr>',
         to: process.env.EMAIL_USER,
         subject: "Photo Booth Email Request",
         text: `New Message: 
