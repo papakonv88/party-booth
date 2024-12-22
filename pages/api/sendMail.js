@@ -1,12 +1,10 @@
 import {Resend} from 'resend';
 
-// Initialize Resend with your API key
 const resend = new Resend(process.env.RESEND_API_KEY);
 export default async (req, res) => {
     const {fullName, contactNumber, email, location, date, message, services} = req.body;
-    // Send the email
     const {data, error} = await resend.emails.send({
-        from: 'no-reply@resend.dev', // sender address
+        from:  process.env.EMAIL_USER,
         to: process.env.EMAIL_USER,
         subject: "Photo Booth Email Request",
         text: `New Message: 
