@@ -1,4 +1,5 @@
 import Head from "next/head";
+import axios from "axios";
 import Input from "../components/ui/Input";
 import Button from "../components/ui/Button";
 import Checkbox from "../components/ui/Checkbox";
@@ -28,15 +29,17 @@ export default function GetStarted() {
         setIsloading(true)
         e.preventDefault();
         try {
-            const response = await fetch('https://www.party-booth.gr/api/sendMail', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData),
-            });
-            const data = await response.json();
-            if (response.ok) {
+            const response = await axios.post(
+                    "/api/sendMail",
+                    formData,
+                    {
+                        headers: {
+                            "Content-Type": "application/json",
+                        },
+                    }
+                )
+            ;
+            if (response.status === 200) {
                 setIsMail(true)
                 setIsloading(false)
             } else {
@@ -215,7 +218,7 @@ export default function GetStarted() {
                                 </form> :
                                 <div className='class="max-w-lg sm:text-center lg:text-center"'>
                                     <h1 className='text-green-800 text-3xl font-semibold sm:text-4xl'>
-                                       Ευχαριστούμε! Το μήνυμα σας, στάλθηκε επιτυχώς!
+                                        Ευχαριστούμε! Το μήνυμα σας, στάλθηκε επιτυχώς!
                                     </h1>
                                     <p className='mt-5'>
                                         Κάποιος από την ομάδα μας, θα επικοινωνήσει μαζί σας πολύ σύντομα :)
