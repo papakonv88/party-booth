@@ -12,6 +12,7 @@ export default async (req, res) => {
         message: 'sdsd',
         services: ['sdsds', 'sdsdsd']
     };
+/*
     const {data, error} = await resend.emails.send({
         from: 'Photo Booth | SKG <you@party-booth.gr>',
         to: process.env.EMAIL_USER,
@@ -25,6 +26,7 @@ export default async (req, res) => {
                      Message: ${message}
                      Services: ${services.join(", ")}`,
     });
+*/
 
     if (error) {
         return res.status(400).json(error);
