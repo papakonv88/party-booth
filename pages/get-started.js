@@ -28,7 +28,7 @@ export default function GetStarted() {
         setIsloading(true)
         e.preventDefault();
         try {
-            const response = await fetch('/api/sendMail', {
+            const response = await fetch('https://www.party-booth.gr/api/sendMail', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
