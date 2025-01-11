@@ -2,7 +2,6 @@ import {Resend} from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 export default async (req, res) => {
-    console.log('hiii')
     const {fullName, contactNumber, email, location, date, message, services} = req.body || {};
     const {data, error} = await resend.emails.send({
         from: 'Photo Booth | SKG <you@party-booth.gr>',
