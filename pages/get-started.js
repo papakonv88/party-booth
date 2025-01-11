@@ -30,7 +30,7 @@ export default function GetStarted() {
         e.preventDefault();
         try {
             const response = await axios.post(
-                    "/api/sendMail",
+                    " https://party-booth.gr/api/sendMail",
                     formData,
                     {
                         headers: {
